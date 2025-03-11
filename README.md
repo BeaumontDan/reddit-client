@@ -64,7 +64,6 @@ This is a React / Redux / API training/learning project, set by [Codecademy][cod
 
 Visit [Jammming][jammming] here!
 
-
 ## Technologies & Prereqisites
 
 * HTML
@@ -76,6 +75,13 @@ Visit [Jammming][jammming] here!
 * Git and GitHub
 * Command line and file navigation
 * Wireframing
+
+--------------------------------------------------------------------------------------------
+
+## Wireframes
+
+![Desktop Wireframe](./readme_assets/desktop_wireframe.png)
+![Mobile Wireframe](./readme_assets/desktop_wireframe.png)
 
 ## Future Improvements
 
