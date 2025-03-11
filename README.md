@@ -81,7 +81,7 @@ Visit [Jammming][jammming] here!
 ## Wireframes
 
 ![Desktop Wireframe](./readme_assets/desktop_wireframe.png)
-![Mobile Wireframe](./readme_assets/mobile_wireframe.png)
+![Mobile Wireframe](./readme_assets/phone_wireframe.png)
 
 ## Future Improvements
 
