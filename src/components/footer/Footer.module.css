@@ -1,0 +1,23 @@
+.Footer {
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #EF4823;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footerLink {
+    color: #EF4823;
+    text-decoration: none;
+}
+
+.footerLink:visited {
+    color: inherit;
+}
+
+.footerLink:hover {
+    color: #000000;
+    text-decoration: underline;
+    transition: all ease-in-out .4s;
+}

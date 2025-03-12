@@ -62,7 +62,7 @@ This is a React / Redux / API training/learning project, set by [Codecademy][cod
 
 ## Application Usage
 
-Visit [Jammming][jammming] here!
+Visit [reddit lite][redditlite] here!
 
 ## Technologies & Prereqisites
 
@@ -102,6 +102,7 @@ tbc
 This project was made possible with help from Codecademy's tutorials and courses. For more information on [Codecademy][codecademy] and their Full-Stack Engineer Course, [click here][fullstackcourse].
 
 [codecademy]: https://www.codecademy.com/
+[redditlite]: https://www.tbc 
 [fullstackcourse]: https://www.codecademy.com/learn/paths/full-stack-engineer-career-path
 [reddit-client-project]: https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-22-portfolio-project-reddit-client/modules/wdcp-22-reddit-client/kanban_projects/reddit-client
 

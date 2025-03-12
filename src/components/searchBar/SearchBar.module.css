@@ -1,0 +1,33 @@
+form {
+    display: inline-flex;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    Width: 30px;
+    border-radius: 15px 0 0 15px;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    border-right: none;
+    color: #ffffff;
+}
+
+input {
+    height: 30px;
+    min-width: 300px;
+    border-radius: 0 15px 15px 0;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    border-left: none;
+    color: #ffffff;
+    padding: 5px;
+}
+
+input:hover {
+    background-color: #ffffff50;
+}
+
+::placeholder {
+    color: #ffffff;
+}

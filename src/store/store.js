@@ -1,0 +1,13 @@
+// Import Redux Tools
+import { configureStore } from "@reduxjs/toolkit";
+
+// Import Reducers
+import redditReducer from './redditSlice';
+import subredditReducer from './subredditSlice';
+
+export const store = configureStore({
+     reducer: {
+        reddit: redditReducer,
+        subreddit: subredditReducer
+    }
+});
