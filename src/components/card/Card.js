@@ -11,7 +11,7 @@ import { FaChevronCircleUp, FaChevronCircleDown, FaComments } from "react-icons/
 // Import Components
 import Comment from '../comment/Comment';
 import { numberFormat } from '../../utils/numberFormat';
-import { startGetPostComments, toggleShowComments } from '../../store/redditSlice';
+import { startGetPostComments, toggleShowComments } from '../newsFeed/redditSlice';
 
 const Card = ({ card, index }) => {
     const [error, setError] = useState(false);

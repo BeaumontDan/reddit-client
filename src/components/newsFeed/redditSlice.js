@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk, createSelector } from '@reduxjs/toolkit';
 
 // Import Components
-import { getSubredditPosts, getPostComments, searchPosts } from '../api/reddit';
+import { getSubredditPosts, getPostComments, searchPosts } from '../../api/reddit';
 
 const initialState = {
     allPosts: [],

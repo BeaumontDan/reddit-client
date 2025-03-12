@@ -7,8 +7,8 @@ import styles from './SubReddits.module.css';
 import { FaReddit } from "react-icons/fa";
 
 // Import Components
-import { getSubtopics } from "../../store/subredditSlice";
-import { changeSubreddit } from "../../store/redditSlice";
+import { getSubtopics } from "./subredditSlice";
+import { changeSubreddit } from "../newsFeed/redditSlice";
 
 
 const Subreddits = () => {

@@ -11,7 +11,7 @@ import './reset.css';
 
 // Import Components
 import App from './app/App';
-import { store } from '../src/store/store';
+import { store } from './app/store';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

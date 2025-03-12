@@ -21,9 +21,9 @@ export const getPostComments = async (permalink) => {
     return json[1].data.children.map((subreddit) => subreddit.data);
 };
 
-export const searchPosts = async (query) => {
-    const response = await fetch(`${API_ROOT}/search.json?q=${query}`);
+export const searchPosts = async (req) => {
+    const response = await fetch(`${API_ROOT}/search.json?q=${req}&sort=relevance&restrict_sr=true`);
     const json = await response.json();
-
-    return json.data.children.map((post) => post.data);
+    return json.data.children.map(post => post.data);
 };
+

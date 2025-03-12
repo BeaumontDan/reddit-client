@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import styles from './SearchBar.module.css';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-import { changeSearchTerm } from '../../store/redditSlice';
+import { changeSearchTerm } from '../newsFeed/redditSlice';
 
 const SearchBar = () => {
     const dispatch = useDispatch();

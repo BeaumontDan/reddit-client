@@ -87,22 +87,15 @@ Visit [reddit lite][redditlite] here!
 
 This Reddit Client is an evolving project, future enhancments being considered are:
 
-##### Immediate Features to Develop
-
-tbc
-
-##### Additional Features to Introduce
-
-tbc
-
-
+* **Subreddits on Mobile:** introcude a popup side menu for sitereddit, making it available to mobile users
+* **Pages:** Introduce pages, limiting the intial list of posts to the news feed, and allowing users to click 'Next' and 'Previous'
 
 ## Credits
 
 This project was made possible with help from Codecademy's tutorials and courses. For more information on [Codecademy][codecademy] and their Full-Stack Engineer Course, [click here][fullstackcourse].
 
 [codecademy]: https://www.codecademy.com/
-[redditlite]: https://www.tbc 
+[redditlite]: https://cc-redditlite.netlify.app/
 [fullstackcourse]: https://www.codecademy.com/learn/paths/full-stack-engineer-career-path
 [reddit-client-project]: https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-22-portfolio-project-reddit-client/modules/wdcp-22-reddit-client/kanban_projects/reddit-client
 

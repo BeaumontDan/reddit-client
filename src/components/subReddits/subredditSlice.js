@@ -2,7 +2,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 // Import Components
-import { getSubreddits } from "../api/reddit";
+import { getSubreddits } from "../../api/reddit";
 
 const initialState = {
     subtopics: [],
