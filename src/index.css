@@ -1,0 +1,12 @@
+body {
+  margin: 1rem;
+  font-family: 'Reddit Sans', 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #E7E8E9;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
