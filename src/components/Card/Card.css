@@ -1,17 +1,10 @@
-.card {
+.redditCard {
     background-color: #FFFFFF;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 3px 2px 8px #87878780;
     width: 100%;
-}
-
-h4 {
-    font-family: "Reddit Sans", sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #000000;
+    max-width: 100%;
 }
 
 .cardHeader {
@@ -19,6 +12,19 @@ h4 {
     justify-content: space-between;
     color: #EF4823;
     margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 {
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
 }
 
 .imgPost img {
@@ -32,29 +38,6 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #666666;
-    margin-top: 1rem;
-}
-
-.cardLike {
-    display: flex;
-    align-items: center;
-}
-
-.iconAction {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.commentIcon {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
     color: #000000;
-}
-
-.comments {
     margin-top: 1rem;
 }

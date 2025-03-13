@@ -1,26 +1,26 @@
 // Import React Tools
 import React from 'react';
-
-import reportWebVitals from './reportWebVitals';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 // Import StyleSheets
 import './index.css';
-import './reset.css';
 
 // Import Components
 import App from './app/App';
-import { store } from './app/store';
+import store from './app/store';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+
+      <Provider store={store} >
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

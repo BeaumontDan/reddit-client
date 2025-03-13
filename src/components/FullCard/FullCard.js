@@ -1,26 +1,29 @@
 // Import React Tools
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { HashLink as Link } from 'react-router-hash-link';
+import { MarkdownText } from '../Comment/MarkdownText';
 
 // Import StyleSheets
-import './Card.css';
+import '../Card/Card.css';
+import './FullCard.css';
 import { FaChevronCircleUp, FaChevronCircleDown, FaComments } from "react-icons/fa";
 
-export const Card = ({ post, showSubreddit }) => {
+export const FullCard = ({ post }) => {
     let content;
 
     const [arrowDirection, setArrowDirection] = useState(0);
 
     if (post.post_hint === 'image') {
-        content = <div className='imgPost'>
+        content = <div className='imgPost full-card-image'>
             <img src={post.url} alt='Preview' />
         </div>
     } else {
         content = post.thumbnail && post.thumbnail !== 'default' ?
-            <a href={post.url} target='_blank' rel='noreferrer' ><img src={post.thumbnail} alt='media preview' /></a> :
-            <a className='post-link' href={post.url} target='_blank' rel='noreferrer' >{post.url}</a>
+            <a href={post.url} target='_blank' rel='noreferrer'><img src={post.thumbnail} alt='Preview' /></a> :
+            <a className='post-link' href={post.url} target='_blank' rel='noreferrer'>{post.url}</a>
     }
+
 
     const onClickarrow = (direction) => {
         setArrowDirection(direction);
@@ -44,24 +47,22 @@ export const Card = ({ post, showSubreddit }) => {
         )
     }
 
-    let thumbnailClass = post.post_hint !== 'image' && post.thumbnail && post.thumbnail !== 'default' ?
+
+    let thumbnailClass = post.post_hint !== 'image' && post.thumbnail && post.thumbnail !== 'default' && !post.is_self ?
         'thumbnail-post' :
         '';
 
     return (
-        <div className='redditCard'>
-            {showSubreddit && <Link className='subredditLink' to={`/${post.subreddit}`}>{post.subreddit}</Link>}
+        <div className='fullCard'>
 
             <div className='cardHeader'>
                 <span className='cardAuthor'>{post.author}</span>
                 <span className='postTime'>{moment.unix(post.created_utc).fromNow()}</span>
             </div>
 
-            <div className={thumbnailClass}>
-                <Link data-testid={post.id} to={`/${post.subreddit}/${post.id}`}>
-                    <h2 className='post-title'>{post.title}</h2>
-                </Link>
-                {post.is_self || content}
+            <div className={`postContent ${thumbnailClass}`}>
+                <h2 className='postTitle'>{post.title}</h2>
+                {post.is_self ? <MarkdownText body={post.selftext} /> : content}
             </div>
 
             <div className='cardFooter'>
@@ -88,5 +89,5 @@ export const Card = ({ post, showSubreddit }) => {
 
             </div>
         </div>
-    );
-}
+    )
+};

@@ -1,20 +1,26 @@
 // Import React Tools
-import ReactMarkdown from "react-markdown";
-import moment from "moment";
+import moment from 'moment';
+import { MarkdownText } from './MarkdownText';
 
 // Import StyleSheets
-import styles from './Comment.module.css';
+import './Comment.css';
 
-const Comment = ({ comment }) => {
+export const Comment = ({ comment }) => {
     return (
-        <div className={styles.comment}>
-            <div className={styles.info}>
-                <p>{`Posted by: ${comment.author}`}</p>
-                <p>{moment.unix(comment.created_utc).fromNow()}</p>
+        <div className='comment'>
+            <div className='commentHeader'>
+                <p className='commentAuthor'>{comment.author}</p>
+                <span>{moment.unix(comment.created).fromNow()}</span>
             </div>
-            <ReactMarkdown>{String(comment.body)}</ReactMarkdown>
+
+            <MarkdownText body={comment.body} />
+            {comment.replies &&
+                comment.replies.data.children.filter(reply => {
+                    return reply.kind !== 'more';
+                }).map(reply => {
+                    return <Comment key={reply.data.id} comment={reply.data} />
+                })
+            }
         </div>
     )
-};
-
-export default Comment;
+}

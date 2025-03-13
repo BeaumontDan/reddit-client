@@ -1,25 +1,34 @@
 // Import React Tools
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 // Import StyleSheets
-import styles from './App.module.css';
+import './App.css';
 
 // Import Components
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
-import SubReddits from '../components/subReddits/SubReddits';
-import NewsFeed from '../components/newsFeed/NewsFeed';
+import { Subreddit } from '../components/Subreddit/Subreddit';
+import { Post } from '../components/Post/Post';
+import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
+import { SubredditMenu } from '../components/SubredditMenu/SubredditMenu';
+import { SearchResults } from '../components/SearchResults/SearchResults';
 
 const App = () => {
-
   return (
-    <div className={styles.app}>
+    <div className='app'>
       <Header />
-        <div className={styles.main}>
-          <SubReddits />
-          <NewsFeed />
+      <main>
+        <SubredditMenu />
+
+        <div className='posts'>
+          <Routes >
+            <Route path='/' element={<Subreddit />} />
+            <Route path='/search' element={<SearchResults />} />
+            <Route path='/:subreddit' element={<Subreddit />} />
+            <Route path='/:subreddit/:postId' element={<Post />} />
+          </Routes>
         </div>
 
+      </main>
       <Footer />
     </div>
   );

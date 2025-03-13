@@ -1,13 +1,13 @@
-// Import Redux Tools
-import { configureStore } from "@reduxjs/toolkit";
+// Import React Tools
+import { configureStore } from '@reduxjs/toolkit';
 
 // Import Reducers
-import redditReducer from '../components/newsFeed/redditSlice';
-import subredditReducer from '../components/subReddits/subredditSlice';
+import subredditsReducer from '../components/SubredditMenu/SubredditsSlice';
+import searchReducer from '../components/Header/SearchSlice';
 
-export const store = configureStore({
-     reducer: {
-        reddit: redditReducer,
-        subreddit: subredditReducer
+export default configureStore({
+    reducer: {
+        subreddits: subredditsReducer,
+        search: searchReducer
     }
 });
