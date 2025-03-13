@@ -10,7 +10,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 // Import Components
 import { setTerm, clearTerm } from './SearchSlice';
 
-export const Header = () => {
+const Header = () => {
     let term = useSelector(state => state.search.term);
     let dispatch = useDispatch();
     let location = useLocation();
@@ -47,3 +47,5 @@ export const Header = () => {
         </header>
     );
 }
+
+export default Header;

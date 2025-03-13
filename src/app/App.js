@@ -7,7 +7,7 @@ import './App.css';
 // Import Components
 import { Subreddit } from '../components/Subreddit/Subreddit';
 import { Post } from '../components/Post/Post';
-import { Header } from '../components/Header/Header';
+import Header from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
 import { SubredditMenu } from '../components/SubredditMenu/SubredditMenu';
 import { SearchResults } from '../components/SearchResults/SearchResults';
