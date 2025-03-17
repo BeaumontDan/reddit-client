@@ -8,7 +8,7 @@ Portfolio Project: Reddit Client
 ### Author(s)
 [Dan Beaumont](https://github.com/BeaumontDan)
 
-**Date of Compleation:** tbc March 2025
+**Date of Compleation:** 15 March 2025
 
 ## Description
 
