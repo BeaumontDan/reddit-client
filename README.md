@@ -12,7 +12,7 @@ Portfolio Project: Reddit Client
 
 ## Description
 
-This is a React / Redux / API training/learning project, set by [Codecademy][codecademy], untilising React, Redux and API's, to create a [Reddit Client][reddit-client-project] application.
+This is a React / Redux / API training/learning project, set by [Codecademy][codecademy], utilising React, Redux and API's, to create a [Reddit Client][reddit-client-project] application.
 
 ## Codecademy Objective
 
